@@ -31,10 +31,15 @@
 				<artifactId>maven-release-plugin</artifactId>
 				<configuration>
 					<goals>install</goals>
+					<autoVersionSubmodules>true</autoVersionSubmodules>
 				</configuration>
 			</plugin>
 		</plugins>
 	</build>
+	
+	<scm>
+		<developerConnection>scm:git:https://github.com/Juboy/sfg-pet-clinic.git</developerConnection>
+	</scm>
 
 	<modules>
 		<module>pet-clinic-data</module>
